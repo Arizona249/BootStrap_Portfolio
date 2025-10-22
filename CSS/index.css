@@ -1,0 +1,207 @@
+/* @property --pageScrollProgress{
+    syntax: "<length-percentage>";
+    inherits: false;
+    initial-value: 0%;
+
+} */
+@font-face {
+    font-family: 'Manrope';
+    src: url("../Asset/FONT/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'inter-display';
+    src: url("../Asset/FONT/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+    --pageScrollProgress: 0%;
+        --bg-color: #101010;
+        --primaryTextColor: #7f8188;
+        --primaryTextHover: #f9f9f9;
+        --color97: #979797;
+        --color7A: #7a7a7a;
+        --secondaryTextColor: #303236;
+        --secondaryBgColor: #171717;
+        --accentColor: #ffff;
+        --navbarColor: #101010db;
+        --footerBgColor: #1e1d1c;
+        --floatingNavColor: var(--bg-color);
+        --testingBorder: 2px solid red;
+        --testingBorder1: 3px solid teal;
+        --thinBorder: .2px solid rgba(214, 208, 208, 31%);
+        --logoImgSize: 80px;
+        --navIconSize: 35px;
+        --transition: all 0.3s ease-in-out;
+        --smallerFontSize: 12px;
+        --smallFontSize: 14px;
+        --normalFontSize: 16px;
+        --mediumFontSize: 18px;
+        --bigFontSize: 20px;
+        --biggerFontSize: 25px;
+        --font30: 30px;
+    }
+
+* {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'inter-display', sans-serif;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    /* color: var(--primaryTextColor); */
+}
+
+/* ======================================================================= */
+/* ======================================================================= */
+section h1{
+    background-clip: text;
+    background-image: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+    color: transparent;
+    font-size: calc(1.2rem + 3vw) !important;
+}
+.typeWriter{
+    color: var(--primaryTextColor);
+}
+.videocontainer{
+    /* height: 100vh; */
+}
+section video{
+    width: 500px;
+    height: 600px;
+    aspect-ratio: 1/1;
+    pointer-events: none;
+    
+    /* background-color: red; */
+}
+#work h1{
+    color: var(--color97);
+    font-size: var(--biggerFontSize) !important;
+    margin-bottom: 1rem !important;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+    
+}
+.work{
+    gap: 5rem !important;
+}
+
+
+.project{
+    margin-bottom: 10rem !important;
+    background-color: var(--secondaryBgColor);
+    transform-style: preserve-3d;
+    position: relative;
+    height: calc(100dvh - 80px);
+    padding: 3rem;
+    /* border:var(--testingBorder); */
+    gap: 1rem !important;
+    grid-template-columns: repeat(2,1fr);
+    transition: var(--transition);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    scale: 0.5;
+    /* opacity: 0; */
+    box-shadow: 3px 3px 10px var(--footerBgColor);
+    /* transform-origin: center center; */
+    backface-visibility: visible;
+    /* transform:perspective(1000px) rotate3d(3,2,0,50deg); */
+    transform:perspective(1000px) rotateX(10deg);
+
+}
+.show{
+    transform: perspective(100px) rotateX(0);
+    scale: 1;
+    opacity: 1;
+}
+.project img{
+    width: 40%;
+    height: 100%;
+    aspect-ratio: 1;
+    margin-top: 3px;
+    /* border: var(--testingBorder1); */
+
+}
+.project .work-description{
+    grid-column: 1/3;
+    gap: 4rem;
+}
+.project .work-description p:nth-child(1){
+    color: var(--accentColor);
+    font-size: var(--font30);
+}
+.project .work-description p:nth-child(2){
+    font-size: var(--bigFontSize);
+    color: var(--color97);
+}
+.project .writeup{
+    /* border: var(--testingBorder); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-column: 1/3;
+    padding: 5px;
+    /* height: 15%; */
+}
+.writeup p{
+    color: var(--color97);
+    font-size: calc(var(--smallFontSize) + 1px);
+    position: relative;
+    margin: 0px!important;
+}
+.writeup svg{
+    /* padding: 5px; */
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+
+
+
+@media (max-width:768px) {
+    section img{
+        margin-top: 0px;
+    }
+    /* .project img{
+        /* width: 100%; */
+        /* object-fit: contain !important; 
+    } */
+    .project .work-description{
+        gap: 1.5rem;
+    }
+        
+}
+@media (max-width:350px) {
+    section img{
+        margin-top: -10px;
+    }
+    .project img {
+        width: 100%;
+        display: none !important;
+            /* object-fit: contain !important; */
+    }
+    .project{
+        height: fit-content !important;
+        gap: 2rem !important;
+    }
+    .project .writeup svg{
+        display: none;
+    }
+}
+
+
+@media (max-width:300px) {
+    body{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url("../Asset/FONT/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'inter-display';
+    src: url("../Asset/FONT/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+    --pageScrollProgress: 0%;
+    --bg-color: #101010;
+    --primaryTextColor: #7f8188;
+    --color97: #979797;
+    --color7A: #7a7a7a;
+    --primaryTextHover: #f9f9f9;
+    --secondaryTextColor: #303236;
+    --navbarColor: #101010db;
+    --floatingNavColor: var(--bg-color);
+    --testingBorder: 2px solid red;
+    --testingiBorder1: 3px solid teal;
+    --thinBorder: .2px solid rgba(214, 208, 208, 31%);
+    --logoImgSize: 80px;
+    --navIconSize: 35px;
+    --transition: all 0.3s ease-in-out;
+    --normalFontSize: 16px;
+    --mediumFontSize: 18px;
+    --bigFontSize: 20px;
+    --biggerFontSize: 25px;
+}
+
+* {
+    font-family: 'inter-display', sans-serif;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+
+
+.navbar {
+    background-color: var(--navbarColor);
+    backdrop-filter: blur(6px);
+    transition: var(--transition);
+    /* transition-timing-function: cubic-bezier(.42, 0, .44, 1.68); */
+    /* height: fit-content; */
+    /* padding: 0 !important; */
+}
+
+.logo img {
+    /* border: var(--testingiBorder1); */
+    width: var(--logoImgSize);
+    height: var(--logoImgSize);
+    aspect-ratio: 1/1;
+}
+
+
+.floating-nav {
+    background-color: var(--floatingNavColor);
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+    border: var(--thinBorder);
+    padding-block: 3px;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+    box-shadow: 0 0 1px var(--primaryTextColor);
+    gap: clamp(10px, 30px, 40px) !important;
+
+}
+
+.hovericon {
+    width: var(--navIconSize);
+    height: var(--navIconSize);
+    color: var(--secondaryTextColor);
+    pointer-events: none;
+}
+
+.custom_progress {
+    width: calc(var(--navIconSize) - 2px);
+    aspect-ratio: 1;
+    background: conic-gradient(var(--primaryTextColor) var(--pageScrollProgress), var(--secondaryTextColor)0%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: --pageScrollProgress, 500ms linear !important;
+    /* transition-property: --pageScrollProgress; */
+    /* transition-duration: 1s; */
+    /* transform: rotateX(360deg); */
+}
+
+.custom_progress::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--navIconSize) / 3);
+    aspect-ratio: 1;
+    border-radius: inherit;
+    background-color: var(--floatingNavColor);
+}
+
+
+
+.nav-ul {
+    width: 0;
+    transform: scaleX(0);
+    opacity: 0;
+    overflow: hidden;
+    transform-origin: center;
+    transition: var(--transition);
+
+
+}
+
+.expandNav {
+    opacity: 1;
+    width: 246.7px;
+    transform: scaleX(1);
+}
+
+.floating-nav:hover>ul {
+    opacity: 1;
+    width: 246.7px;
+    /* max-height: 47px; */
+    transform: scaleX(1);
+}
+
+.nav-link {
+    color: var(--primaryTextColor) !important;
+    transition: var(--transition) !important;
+    /* font-size: var(--mediumFontSize)!important; */
+}
+
+.time {
+    color: var(--primaryTextColor);
+}
+
+
+
+.nav-link:hover {
+    color: var(--primaryTextHover) !important;
+}
+
+@media (max-width:768px) {
+    body{
+        margin-bottom: 70px;
+
+    }
+    .navbar {
+        border-radius: 0 !important;
+        padding-block: 10px !important;
+    }
+
+    .floating-nav {
+        padding-inline: 10px !important;
+        gap: min(12px, .3%) !important;
+    }
+}
+@media (max-width:500px) {
+    .floating-nav{
+        gap: min(25px, 3%) !important;
+
+    }
+    
+}
+@media (max-width:350px) {
+    .navbar {
+        /* padding-inline: 0px !important; */
+        border-radius: 0 !important;
+    }
+
+    .floating-nav {
+        width: 100%;
+        gap: min(10px, 1%) !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+        padding: 5px;
+
+    }
+
+    .nav-ul {
+        width: 100% !important;
+        opacity: 1 !important;
+        transform: scale(1) !important;
+        gap: 15px !important;
+        justify-content: space-around !important;
+    }
+
+    .floating-nav .circle,
+    .click-icon {
+        display: none !important;
+    }
+}

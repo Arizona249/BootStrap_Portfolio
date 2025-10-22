@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" id="homepage">
+
+<head>
+    <script>
+        const devPhrases = [
+            "HTML — the silent foundation.",
+            "CSS: margin auto, sanity manual.",
+            "JavaScript doesn’t do commitment — only callbacks.",
+            "Threads — multitasking with anxiety.",
+            "HTML builds, CSS refines.",
+            "NullPointerException: the Java handshake.",
+            "CSS — center alignment’s final boss.",
+            "Promises are just JavaScript’s way of saying ‘trust me.’",
+            "Java — predictable until it isn’t.",
+            "HTML: one tag away from disaster.",
+            "CSS has trust issues with browsers.",
+            "Objects everywhere, structure optional.",
+            "JavaScript — async like my thoughts.",
+            "HTML — simple until it’s not.",
+            "Java: write once, debug everywhere.",
+            "CSS transitions — because sudden change looks wrong.",
+            "Flexbox — the illusion of alignment.",
+            "Java loves exceptions — too much sometimes.",
+            "Every JavaScript bug starts with confidence.",
+            "CSS — making simplicity complicated since forever.",
+            "HTML — a hierarchy of good intentions.",
+            "Java — where everything starts with a class.",
+            "CSS — the illusion of control.",
+            "JavaScript — the chaos engine of the web.",
+            "HTML gives structure, CSS gives personality.",
+            "Threads dream of synchronization.",
+            "CSS — proof that beauty requires pain.",
+            "JavaScript and I have an async relationship.",
+            "HTML — not broken, just missing a closing tag.",
+            "Java syntax: strict, but fair.",
+            "Asynchronous code, synchronous stress.",
+            "Java — object-oriented, developer-disoriented.",
+            "CSS — beauty powered by chaos.",
+            "Who needs sleep when you have semicolons?",
+            "HTML — it’s not broken, it’s just missing a closing tag.",
+            "CSS — adding color to confusion.",
+            "JavaScript — turning confusion into production.",
+            "Java — making verbosity look elegant.",
+            "CSS: where one pixel can ruin your day.",
+            "HTML — a love story between tags and mistakes.",
+            "CSS — where center alignment is a journey.",
+            "I debug, therefore I am.",
+            "JavaScript — the universal bug generator.",
+            "Structure by HTML, attitude by CSS.",
+            "CSS has trust issues with browsers.",
+            "Threads are like roommates — noisy and unpredictable.",
+            "Java — serious code with playful bugs.",
+            "HTML builds it, CSS sells it.",
+            "Promises kept? Not in my JavaScript.",
+            "JavaScript runs everywhere… except on time.",
+            "Java — making verbosity fashionable since 1995.",
+            "CSS — the illusion of control.",
+            "HTML — open tag, open heart.",
+            "Semicolons: optional chaos.",
+            "CSS: Constantly Shifting Styles.",
+            "JavaScript — one language to confuse them all.",
+            "Java — structured patience.",
+            "CSS — making simplicity complicated since forever.",
+            "HTML builds, CSS dazzles.",
+            "Modeling reality, One object at time",
+            "JavaScript — because someone has to make buttons click.",
+            "CSS — adding style to logic’s chaos.",
+            "Objects everywhere, peace nowhere.",
+            "CSS — margin auto, sanity manual.",
+            "JavaScript — turning confusion into production.",
+            "Java — serious code with playful bugs.",
+            "HTML — simple until you forget one div.",
+            "CSS — the world’s most emotional language.",
+            "Java: structured patience.",
+            "JavaScript — the web’s favorite troublemaker.",
+            "HTML — looks easy until it isn’t.",
+            "CSS — beauty powered by chaos.",
+            "HTML — not broken, just missing a closing tag.",
+            "Java — where threads dream of synchronization.",
+            "CSS — adding structure to chaos since forever.",
+            "HTML builds it, CSS sells it.",
+            "Java — making verbosity look elegant.",
+            "JavaScript — the art of fixing what you didn’t break.",
+            "CSS transitions — for when change needs to look calm.",
+            "HTML gives structure, CSS gives personality.",
+            "Promises in JavaScript are like to-do lists you forget.",
+            "Threads dream of synchronization.",
+            "CSS — the illusion of control.",
+            "JavaScript — async like my thoughts.",
+            "HTML — a hierarchy of good intentions.",
+            "CSS — proof that beauty requires pain.",
+            "Java — object-oriented, developer-disoriented.",
+            "HTML — one tag away from disaster.",
+            "CSS — margin auto, sanity manual.",
+            "JavaScript doesn’t do commitment — only callbacks.",
+            "CSS — the illusion of control.",
+            "HTML — the silent foundation.",
+            "CSS — adding color to confusion.",
+            "Java — where everything starts with a class.",
+            "JavaScript — turning confusion into production.",
+            "CSS has trust issues with browsers.",
+            "HTML builds it, CSS sells it.",
+            "Threads — multitasking with anxiety.",
+            "JavaScript — one language to confuse them all.",
+            "CSS — beauty powered by chaos.",
+            "HTML — open tag, open heart."
+        ];
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+    <!-- <script title="OnlineWebFonts" src="https://db.onlinewebfonts.com/animations/icons/288246.js" -->
+    <style>
+        .framer-text {
+            background-clip: text;
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <span data-text-fill="true" class="framer-text"style="background-image: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%); color: transparent;">Arinze</span> -->
+    <!-- NAVIGATION BAR -->
+    <nav
+        class="navbar px-md-5 py-0 px-1 flex-column flex-md-row container-fluid container-md fixed-bottom sticky-md-top rounded-4 mb-0 mb-md-2">
+        <div class="logo d-none d-md-flex "><img width="200px" height="200px"
+                class="navbar-brand img-fluid object-fit-cover" src="../Asset/IMAGES/erasebg-transformed (1).png "
+                alt=""></div>
+        <!-- <div class="logo"><img  class="navbar-brand img-fluid object-fit-cover" src="../Asset/IMAGES/2-135653517-unscreen.gif " alt=""></div> -->
+        <!-- <div class="logo d-none d-md-flex"><img class="navbar-brand img-fluid object-fit-cover"
+                    src="../Asset/IMAGES/rotatingillusion.gif " alt=""></div> -->
+
+        <div
+            class="floating-nav  d-flex  justify-content-between align-items-center px-2 rounded-pill align-self-sm-center mb-sm-2 mb-md-0">
+            <div class="click-icon   d-flex align-items-center justify-content-center me-md-2 me-1">
+                <svg fill="currentColor" class="hovericon">
+                    <use xlink:href="#hovericon"></use>
+                </svg>
+            </div>
+            <ul class="navbar-nav flex-row gap-md-5 gap-1  nav-ul justify-content-between ">
+                <li class="nav-items"><a class="nav-link fw-bold " href="#work">Work</a></li>
+                <li class="nav-items"><a class="nav-link fw-bold " href="about.html">About</a></li>
+                <li class="nav-items"><a class="nav-link fw-bold " href="#">Contact</a></li>
+            </ul>
+            <div
+                class="custom_progress rounded-circle bg-dark d-flex align-items-center justify-content-center ms-md-2 ms-1">
+            </div>
+        </div>
+
+        <p class="time d-none d-md-block fw-bold align-self-center">6:12 AM</p>
+    </nav>
+
+
+    <section class="container mb-md-5 mb-0 pt-md-0 pt-3 mt-md-3 d-flex flex-column ">
+        <h1 class="display-1 fw-semibold text-center name">Arinze</h1>
+        <p class="lead  text-center typeWriter"></p>
+        <div class="container videocontainer d-md-flex justify-content-center overflow-hidden align-items-start ">
+            <video src="../Asset/IMAGES/bunny.webm" class="w-100" autoplay muted loop alt=""></video>
+        </div>
+    </section>
+
+    <section id="work" class="mt-md-5 mt-0  py-5 container mb-5  d-flex justify-content-center flex-column">
+        <div class="latest-work work  d-flex flex-column gap-5">
+            <h1 class="display-4 text-center lead mb-4 p-5 work-heading" id="latestwork">Latest Work</h1>
+            <a class=" project d-grid rounded-3 text-decoration-none" href="#">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">01 | WEB APPLICATION AND DESIGN</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class="object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0">BlockChain Explorer</p>
+                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+
+
+        <div class="Selected-Work work mt-5 d-flex flex-column gap-5 mb-5">
+            <h1 class="display-4 text-center lead mb-4 p-5">Selected Work</h1>
+            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="firstPortfolio" href="#">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">01 | WEB DESIGN</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0">First Portofilo</p>
+                        <p>A little throwback to one of the steps along the way to getting here.</p>
+                    </div>
+                </div>
+
+            </a>
+
+            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="wehope" href="#">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">02 | WEB DESIGN</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0">BlockChain Explorer</p>
+                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
+                    </div>
+                </div>
+
+            </a>
+
+            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="dedust" href="#">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">03 | WEB DESIGN</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0">DEDUST.IO</p>
+                        <p>A Decentralized trading exchange where you can move into the ton ecosystem.</p>
+                    </div>
+                </div>
+
+            </a>
+
+            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="uniswap" href="../../UNISWAP/HTML/index.html">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">04 | WEB DESIGN</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0">UNISWAP</p>
+                        <p>The No.1 Decentralized exchange on the ethereum network.UNIque Indeed!</p>
+                    </div>
+                </div>
+
+            </a>
+
+        </div>
+
+        <div class="non-static work mt-5 d-flex flex-column gap-5 mb-5">
+            <h1 class="display-4 text-center lead " id="non-static">Non Static</h1>
+            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" href="#">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">01 | WEB APPLICATION</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0"> BlockChain Explorer</p>
+                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
+                    </div>
+                </div>
+
+            </a>
+            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" href="#">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">02 | WEB APPLICATION</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0">BlockChain Explorer</p>
+                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
+                    </div>
+                </div>
+
+            </a>
+            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" href="#">
+                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
+                    <p class="fw-semibold">03 | WEB APPLICATION</p>
+                    <svg class="ethlogo">
+                        <use xlink:href="#eth"></use>
+                    </svg>
+                </div>
+
+                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
+                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
+                    <div>
+                        <p class="m-0">BlockChain Explorer</p>
+                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="px-md-5 px-2 py-md-4 py-3 d-flex flex-column gap-4 justify-content-center">
+        <h3 class="text-capitalize text-center">Thanks for stopping by! here's more of me</h3>
+        <div class="d-grid footer-links">
+            <ul>
+                <li>Pages</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li>Selected Work</li>
+                <li><a href="#firstPortfolio">First Portofilo</a></li>
+                <li><a href="#wehope">WeHope</a></li>
+                <li><a href="#dedust">DeDust Clone</a></li>
+                <li><a href="#uniswap">UniSwap Clone</a></li>
+            </ul>
+            <ul>
+                <li>Non-Static</li>
+                <li><a href="#">Pokemon</a></li>
+                <li><a href="#">EvmScan+ Explorer</a></li>
+                <li><a href="#">WeVote</a></li>
+            </ul>
+            <ul>
+                <li>Let's Connect</li>
+                <li><a href="">X</a></li>
+                <li><a href="mailto:arinzlotanna@gmail.com">Email</a></li>
+                <li><a href="">WhatsApp</a></li>
+            </ul>
+
+            <span class="theme-container">
+                <svg class="moon" width="30px" height="30px">
+                    <use xlink:href="#moontheme"></use>
+                </svg>
+                <svg class="sun" width="30px" height="30px">
+                    <use xlink:href="#suntheme"></use>
+                </svg>
+            </span>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        const time = document.querySelector(".time");
+        function updateTime(element) {
+            const now = new Date();
+            // AM|| PM
+            let meridem= now.toLocaleTimeString()
+            meridem=meridem[meridem.length-2] + meridem[meridem.length - 1]
+            // console.log(meridem)
+            let hour=now.getHours();
+            let minutes= now.getMinutes()
+            console.log(now.getMinutes().length)
+            let formattedTime = now.getHours() +":" +now.getMinutes() +" "+meridem;
+
+            console.log(formattedTime)
+            element.textContent = formattedTime;
+            // setTimeout(() => { updateTime(time) }, 60);
+        }
+
+        updateTime(time)
+    </script>
+
+    <!-- <script src="../JS/svgAnimation.js"></script> -->
+    <!-- <script src="../JS/typing.js"></script> -->
+    <script src="../JS/animation.js"></script>
+</body>
+
+</html>
+
+
+
+<svg style="display:none;" width="24px" height="24px" fill="#737171" xmlns="http://www.w3.org/2000/svg">
+    <!-- //moon icon -->
+    <symbol id="hovericon" viewBox="0 0 256 256" x="0px" y="0px" viewBox="0 0 256 256"
+        enable-background="new 0 0 256 256" xml:space="preserve">
+        <g>
+            <g>
+                <path fill="currentColor"
+                    d="M238,175.4l-96.4-34c-3.5-1.3-5.3,0.5-4,3.8l36.2,91.4c1.3,3.3,3.7,3.4,5.3,0.2c0,0,8.9-18,16.8-29.5l23.5,23c2.2,2.2,5.9,2.2,8.3,0.1l5.5-5.1c2.3-2.1,2.3-5.7,0.1-7.9l-23.5-23c11.6-7,28.4-14.1,28.4-14.1C241.6,178.8,241.5,176.6,238,175.4z" />
+                <path fill="currentColor"
+                    d="M211.4,48.3c-46.1-44-120.8-44-166.9,0c-46.1,44-46.1,115.3,0,159.4c25.7,24.5,60.3,35.4,93.8,32.6l-4.4-15.7c-27.9,1.6-56.4-7.7-77.8-28.1c-39.5-37.7-39.5-98.9,0-136.6s103.5-37.7,143,0c22.3,21.4,32,50.2,29.1,78.1l16.7,4.3C249.5,108.8,238.3,73.9,211.4,48.3z" />
+                <path fill="currentColor"
+                    d="M186.8,71.7c-32.8-31.4-86-31.4-118.9,0c-32.8,31.4-32.8,82.2,0,113.5c17,16.2,39.3,24,61.6,23.5l-4.5-16.1c-16.4-0.6-32.7-6.8-45.2-18.8c-26.2-25.1-26.2-65.7,0-90.8c26.2-25.1,68.8-25.1,95.1,0c13.3,12.8,19.9,29.5,19.7,46.2l16.6,4.3C212.8,111.3,204.6,88.7,186.8,71.7z" />
+            </g>
+        </g>
+    </symbol>
+    <!-- sunicon -->
+    <symbol id="circle" viewBox="0 0 24 24">
+        <g style="transform: translateX(8.5px) translateY(7.5px);">
+            <circle cx="11" cy="11" r="11" fill="none" stroke="rgb(48, 50, 54)" stroke-width="5"
+                stroke-dasharray="69.11503837897544"></circle>
+            <circle cx="11" cy="11" r="11" fill="none" stroke="rgb(127, 129, 136)" stroke-width="5"
+                stroke-linecap="butt" stroke-dasharray="69.11503837897544" style="stroke-dashoffset: 69.115;"></circle>
+        </g>
+    </symbol>
+
+    <symbol id="eth" viewBox="-80.5 0 417 417">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+            <g>
+                <polygon fill="#343434"
+                    points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
+                </polygon>
+                <polygon fill="#8C8C8C" points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
+                <polygon fill="#3C3C3B"
+                    points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
+                </polygon>
+                <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852"> </polygon>
+                <polygon fill="#141414" points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
+                <polygon fill="#393939" points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="moontheme" viewBox="0 0 24 24" fill="none">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+        <path
+                d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+
+    </symbol>
+    
+
+    <symbol viewBox="0 0 24 24" id="suntheme" fill="none">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M7.28451 10.3333C7.10026 10.8546 7 11.4156 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C11.4156 7 10.8546 7.10026 10.3333 7.28451"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M12 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M12 20V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M4 12L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M22 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M19.7778 4.22266L17.5558 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M4.22217 4.22266L6.44418 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M6.44434 17.5557L4.22211 19.7779" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M19.7778 19.7773L17.5558 17.5551" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+    </symbol>
+
+
+
+
+
+
+</svg>

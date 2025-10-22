@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url("../Asset/FONT/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'inter-display';
+    src: url("../Asset/FONT/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+    --pageScrollProgress: 0%;
+    --bg-color: #101010;
+    --primaryTextColor: #7f8188;
+    --primaryTextHover: #f9f9f9;
+    --color97: #979797;
+    --color7A: #7a7a7a;
+    --secondaryTextColor: #303236;
+    --secondaryBgColor:#171717;
+    --accentColor:#ffff;
+    --navbarColor: #101010db;
+    --footerBgColor:#1e1d1c;
+    --floatingNavColor: var(--bg-color);
+    --testingBorder: 2px solid red;
+    --testingBorder1: 3px solid teal;
+    --thinBorder: .2px solid rgba(214, 208, 208, 31%);
+    --logoImgSize: 80px;
+    --navIconSize: 35px;
+    --transition: all 0.3s ease-in-out;
+    --smallerFontSize:12px;
+    --smallFontSize:14px;
+    --normalFontSize: 16px;
+    --mediumFontSize: 18px;
+    --bigFontSize: 20px;
+    --biggerFontSize: 25px;
+    --font30:30px;
+}
+
+* {
+    font-family: 'inter-display', sans-serif;
+    font-family: 'Manrope', sans-serif;
+
+}
+.name{
+    font-size: calc(1.2rem + 3vw) !important;
+}
+
+.typeWriter{
+    color:var(--primaryTextColor)
+}
+
+/* .writeUpSection img {
+    aspect-ratio: 1;
+    width: 100%;
+    height: 800px;
+    margin-top: -210px;
+    /* border: 4px solid black; */
+    /* display: flex;
+    align-items: end; 
+} */
+.about-card{
+    background-color: var(--secondaryBgColor);
+    border: var(--thinBorder) !important;
+}
+.about-card h2{
+    font-size: var(--font30) !important;
+    color: var(--accentColor);
+}
+.about-paragraph{
+    font-size: var(--smallFontSize);
+    color: var(--color7A) !important;
+}
+.about-heading{
+    font-size: var(--smallerFontSize);
+    /* margin-bottom: 0px !important; */
+}
+.aboutDescription{
+    font-size: var(--bigFontSize);
+    color: var(--color97);
+}
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+
+
+.musicContainer{
+   grid-template-columns: 1fr 1fr;
+   /* gap: 10px; */
+}
+
+.music{
+    color: var(--primaryTextColor);
+    position: relative;
+    overflow: hidden;
+    border:var(--thinBorder);
+    /* padding: 30px !important; */
+    
+}
+.music p{
+    color: var(--accentColor);
+}
+.music:first-child{
+    background-color: red;
+    background-image:linear-gradient(to top,rgba(21, 21, 21, 0.799), rgba(0, 0, 0, 0.667)), url("../Asset/IMAGES/music.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.music:nth-child(2){
+    background-color: red;
+    background-image: url("../Asset/IMAGES/drive.png");
+    background-size: cover;
+        background-position: center;
+}
+.music:nth-child(3){
+    background-image:linear-gradient(to top, rgba(21, 21, 21, 0.799), rgba(0, 0, 0, 0.667)), url("../Asset/IMAGES/creative.png");
+    background-size: cover;
+        background-position: center;
+}
+.music:nth-child(4){
+    background-image:linear-gradient(to top, rgba(21, 21, 21, 0.799), rgba(0, 0, 0, 0.667)), url("../Asset/IMAGES/flow.png");
+    background-size: cover;
+        background-position: center;
+}
+
+.spotify{
+    position: absolute;
+    width: 100%;
+    /* border: var(--testingBorder); */
+    display: flex;
+    bottom: 0px;
+    left: 0;
+    align-items: end;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+
+.spotify iframe{
+    width: 100% !important;
+    aspect-ratio: 1;
+    position: relative;
+    /* top: 17px; */
+    /* bottom: 0; */
+}
+
+
+
+.xp-container{
+    background-color: var(--secondaryBgColor);
+    border: var(--thinBorder);
+}
+
+.xp-container p{
+    margin-bottom: 0 !important;
+}
+.xp-container .paragraph, a{
+    font-size: var(--smallerFontSize);
+    color: var(--color7A);
+    transition: var(--transition);
+}
+
+.xp-container a:hover{
+    color: var(--primaryTextHover);
+}
+.xp-container .xps{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.xps p{
+    font-size: var(--bigFontSize);
+    color: var(--color97);
+}
+.xps .roles{
+    /* border: var(--testingBorder1); */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.roles img{
+    width: 40px;
+    aspect-ratio: 1;
+    /* padding: 3px; */
+}
+/* =========================================================================================== */
+/* =========================================================================================== */
