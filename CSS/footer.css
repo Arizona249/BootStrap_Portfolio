@@ -30,10 +30,14 @@ footer {
     /* border: var(--testingBorder1); */
     margin-top: 10rem;
     background-color: var(--footerBgColor);
+    transition: var(--transition);
+    transition-duration: .8s;
 }
 
 footer h3 {
     color: var(--accentColor) !important;
+    transition: var(--transition);
+    transition-duration: .8s;
 }
 
 .footer-links {
@@ -67,28 +71,53 @@ footer h3 {
     color: var(--primaryTextHover);
 }
 footer .theme-container{
-    border: 2px solid black;
-    width: 50px;
-    height: 50px;
+    /* border: var(--thinBorder); */
+    width: 30px;
+    height: 30px;
     aspect-ratio: 1;
     display: flex;
-    padding: 5px;
-    border-radius: 20px;
-    margin-top: -20px;
-   
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+    border-radius: 50%;
+    margin-top: -30px;
+   position: relative;
+   box-shadow: 0 0 5px var(--bg-color);
+   transition: var(--transition);
+   padding: 15px;
+   pointer-events: all;
+   cursor: pointer;
+   overflow: hidden;
 
 }
 .theme-container svg{
     width: 24px;
-    height: 30px;
+    height: 24px;
     aspect-ratio: 1;
     color: var(--primaryTextColor);
-    /* display: none; */
+    position: absolute;
+    display: grid;
+    place-items: center;
+    transform: translate(0) rotate(0);
+    transition-duration: 1s;
+    cursor: pointer;
+    /* /* display: none;  */
 }
-/* .sun{
-    /* display: none; 
-    transform: translateX(-130px) rotate(-60deg);
-} */
+svg.sun{
+    color: rgb(195 136 2);
+}
+svg.moon{
+    transform:translateY(18px) translateX(21px) rotate(303deg);
+    /* display: none !important; */
+}
+
+.lightMode .moon{
+    transform: translate(0) rotate(0);
+}
+.lightMode .sun{
+    transform:translateY(18px) translateX(-21px) rotate(303deg);
+
+}
 
 
 

@@ -1,17 +1,16 @@
-const progressCircle = document.querySelector(".custom_progress")
-const floatingNavBarList=document.querySelector(".floating-nav ul")
+const progressCircle = document.querySelector(".custom_progress");
+const floatingNavBarList=document.querySelector(".floating-nav ul");
 const element = document.querySelector(".typeWriter");
-const heroName = document.querySelector(".name")
-// window.scrollTo(top)
+const heroName = document.querySelector(".name");
+const themeBtn = document.querySelector(".theme-container")
 
-document.onload=function(){window.scrollTo({top:0,behavior:"smooth"})}
-document.addEventListener("DOMContentLoaded",()=>{
-    console.log("loaded")
-        window.scrollTo({ top: 0, behavior: "smooth" })
-})
+// document.addEventListener("DOMContentLoaded",()=>{
+//     console.log("loaded")
+//         window.scrollTo({ top: 0, behavior: "smooth" })
+// })
 
 
-// if (scrollY <= 12) { floatingNavBarList.classList.add("expandNav") }
+if (scrollY <= 12) { floatingNavBarList.classList.add("expandNav") }
 window.addEventListener("scroll",()=>{
     // console.log("scrolled To : "+ scrollY)
     let progress = window.scrollY / (document.documentElement.offsetHeight - window.innerHeight) * 100;
@@ -134,4 +133,17 @@ else{
     }
     startTyping();
 }
+themeBtn.addEventListener("click",()=>{
+
+   if(document.documentElement.classList.contains("lightMode")){
+        document.documentElement.classList.remove("lightMode");
+        localStorage.setItem("theme","dark");
+    }
+    else{
+        document.documentElement.classList.add("lightMode");
+        localStorage.setItem("theme","light");
+        
+   }
+    
+})
 

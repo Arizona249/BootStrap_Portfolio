@@ -106,6 +106,22 @@
             "CSS — beauty powered by chaos.",
             "HTML — open tag, open heart."
         ];
+        function toggletheme(){
+            console.log("toggletheme called")
+            let theme = localStorage.getItem("theme");
+            console.log(theme)
+            if (theme === "light") {
+                document.documentElement.classList.add("lightMode");
+                localStorage.setItem("theme", "light")
+            }
+            else {
+                document.documentElement.classList.remove("lightMode");
+                localStorage.setItem("theme", "dark")
+            }
+        }
+        toggletheme();
+
+
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -389,7 +405,7 @@
     </script>
 
     <!-- <script src="../JS/svgAnimation.js"></script> -->
-    <!-- <script src="../JS/typing.js"></script> -->
+    <script src="../JS/typing.js"></script>
     <script src="../JS/animation.js"></script>
 </body>
 

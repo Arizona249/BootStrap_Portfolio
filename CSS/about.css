@@ -44,20 +44,25 @@
 .name{
     font-size: calc(1.2rem + 3vw) !important;
 }
+section h1 {
+    background-clip: text;
+    background-image: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%);
+    color: transparent;
+    font-size: calc(1.2rem + 3vw) !important;
+}
+
+.typeWriter {
+    color: var(--primaryTextColor);
+}
 
 .typeWriter{
     color:var(--primaryTextColor)
 }
 
-/* .writeUpSection img {
-    aspect-ratio: 1;
-    width: 100%;
-    height: 800px;
-    margin-top: -210px;
-    /* border: 4px solid black; */
-    /* display: flex;
-    align-items: end; 
-} */
+[class="lightMode"] .writeUpSection img {
+    filter: invert(1) brightness(0.2);
+        
+}
 .about-card{
     background-color: var(--secondaryBgColor);
     border: var(--thinBorder) !important;

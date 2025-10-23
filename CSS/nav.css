@@ -10,38 +10,69 @@
 
 :root {
     --pageScrollProgress: 0%;
-    --bg-color: #101010;
-    --primaryTextColor: #7f8188;
-    --color97: #979797;
-    --color7A: #7a7a7a;
-    --primaryTextHover: #f9f9f9;
-    --secondaryTextColor: #303236;
-    --navbarColor: #101010db;
-    --floatingNavColor: var(--bg-color);
-    --testingBorder: 2px solid red;
-    --testingiBorder1: 3px solid teal;
-    --thinBorder: .2px solid rgba(214, 208, 208, 31%);
-    --logoImgSize: 80px;
-    --navIconSize: 35px;
-    --transition: all 0.3s ease-in-out;
-    --normalFontSize: 16px;
-    --mediumFontSize: 18px;
-    --bigFontSize: 20px;
-    --biggerFontSize: 25px;
+        --bg-color: #101010;
+        --primaryTextColor: #7f8188;
+        --primaryTextHover: #f9f9f9;
+        --color97: #979797;
+        --color7A: #7a7a7a;
+        --secondaryTextColor: #303236;
+        --secondaryBgColor: #171717;
+        --accentColor: #ffff;
+        --navbarColor: #101010db;
+        --footerBgColor: #1e1d1c;
+        --floatingNavColor: var(--bg-color);
+        --testingBorder: 2px solid red;
+        --testingBorder1: 3px solid teal;
+        --thinBorder: .2px solid rgba(214, 208, 208, 31%);
+        --logoImgSize: 80px;
+        --navIconSize: 35px;
+        --transition: all 0.3s ease-in-out;
+        --smallerFontSize: 12px;
+        --smallFontSize: 14px;
+        --normalFontSize: 16px;
+        --mediumFontSize: 18px;
+        --bigFontSize: 20px;
+        --biggerFontSize: 25px;
+        --font30: 30px;
 }
 
 * {
     font-family: 'inter-display', sans-serif;
     font-family: 'Manrope', sans-serif;
+    transition: var(--transition);
+    transition-duration: 0.8s;
 
 }
 
+html.lightMode {
+    --bg-color: #f9f9f9 !important;
+    --secondaryBgColor: #ffffff !important;
+    --navbarColor: #ffffffd9 !important;
+    --footerBgColor: #f1f1f1 !important;
+    --floatingNavColor: var(--bg-color) !important;
+    --primaryTextColor: #2b2b2b !important;
+    --primaryTextHover: #000000 !important;
+    --secondaryTextColor: #5a5a5a !important;
+    --color97: #a0a0a0 !important;
+    --color7A: #7a7a7a !important;
+    --accentColor: #0059ff !important;
+    --testingBorder: 2px solid red !important;
+    --testingBorder1: 3px solid teal !important;
+    --thinBorder: 0.2px solid rgba(60, 60, 60, 0.15) !important;
+}
+
+body{
+    background-color: var(--bg-color);
+    transition: var(--transition);
+    transition-duration: .8s;
+}
 
 
 .navbar {
     background-color: var(--navbarColor);
     backdrop-filter: blur(6px);
     transition: var(--transition);
+    transition-duration: .8s;
     /* transition-timing-function: cubic-bezier(.42, 0, .44, 1.68); */
     /* height: fit-content; */
     /* padding: 0 !important; */
@@ -80,11 +111,18 @@
     background: conic-gradient(var(--primaryTextColor) var(--pageScrollProgress), var(--secondaryTextColor)0%);
     border-radius: 50%;
     pointer-events: none;
-    transition: --pageScrollProgress, 500ms linear !important;
+    transition: var(--transition);
+    transition-duration: .8s;
     /* transition-property: --pageScrollProgress; */
     /* transition-duration: 1s; */
     /* transform: rotateX(360deg); */
 }
+[class="lightMode"] .custom_progress {
+    background: conic-gradient(rgb(46, 43, 43) var(--pageScrollProgress),
+            rgba(0, 0, 0, 0.1) 0%) !important;
+}
+
+
 
 .custom_progress::after {
     content: "";
@@ -94,6 +132,8 @@
     aspect-ratio: 1;
     border-radius: inherit;
     background-color: var(--floatingNavColor);
+    transition: var(--transition);
+    /* transition-duration: .8s; */
 }
 
 
