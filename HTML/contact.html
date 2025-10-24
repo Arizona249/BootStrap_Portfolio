@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" id="homepage">
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
     <script>
         const devPhrases = [
             "HTML — the silent foundation.",
@@ -106,7 +111,7 @@
             "CSS — beauty powered by chaos.",
             "HTML — open tag, open heart."
         ];
-        function toggletheme(){
+        function toggletheme() {
             console.log("toggletheme called")
             let theme = localStorage.getItem("theme");
             console.log(theme)
@@ -123,37 +128,18 @@
 
 
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/index.css">
-    <link rel="stylesheet" href="../CSS/nav.css">
-    <link rel="stylesheet" href="../CSS/footer.css">
-
-    <!-- <script title="OnlineWebFonts" src="https://db.onlinewebfonts.com/animations/icons/288246.js" -->
-    <style>
-        .framer-text {
-            background-clip: text;
-            font-size: 50px;
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
 </head>
-
 <body>
-    <!-- <span data-text-fill="true" class="framer-text"style="background-image: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%); color: transparent;">Arinze</span> -->
     <!-- NAVIGATION BAR -->
     <nav
         class="navbar px-md-5 py-0 px-1 flex-column flex-md-row container-fluid container-md fixed-bottom sticky-md-top rounded-4 mb-0 mb-md-2">
         <div class="logo d-none d-md-flex "><img width="200px" height="200px"
-                class="navbar-brand img-fluid object-fit-cover" src="../Asset/IMAGES/erasebg-transformed (1).png "
-                alt=""></div>
+                class="navbar-brand img-fluid object-fit-cover" src="../Asset/IMAGES/erasebg-transformed (1).png " alt="">
+        </div>
         <!-- <div class="logo"><img  class="navbar-brand img-fluid object-fit-cover" src="../Asset/IMAGES/2-135653517-unscreen.gif " alt=""></div> -->
         <!-- <div class="logo d-none d-md-flex"><img class="navbar-brand img-fluid object-fit-cover"
                     src="../Asset/IMAGES/rotatingillusion.gif " alt=""></div> -->
-
+    
         <div
             class="floating-nav  d-flex  justify-content-between align-items-center px-2 rounded-pill align-self-sm-center mb-sm-2 mb-md-0">
             <div class="click-icon   d-flex align-items-center justify-content-center me-md-2 me-1">
@@ -164,181 +150,55 @@
             <ul class="navbar-nav flex-row gap-md-5 gap-1  nav-ul justify-content-between ">
                 <li class="nav-items"><a class="nav-link fw-bold " href="index.html">Work</a></li>
                 <li class="nav-items"><a class="nav-link fw-bold " href="about.html">About</a></li>
-                <li class="nav-items"><a class="nav-link fw-bold " href="contact.html">Contact</a></li>
+                <li class="nav-items"><a class="nav-link fw-bold " href="#">Contact</a></li>
             </ul>
             <div
                 class="custom_progress rounded-circle bg-dark d-flex align-items-center justify-content-center ms-md-2 ms-1">
             </div>
         </div>
-
+    
         <p class="time d-none d-md-block fw-bold align-self-center">6:12 AM</p>
     </nav>
-
-
-    <section class="container mb-md-5 mb-0 pt-md-0 pt-3 mt-md-3 d-flex flex-column ">
-        <h1 class="display-1 fw-semibold text-center name">Arinze</h1>
-        <p class="lead  text-center typeWriter"></p>
-        <div class="container videocontainer d-md-flex justify-content-center overflow-hidden align-items-start ">
-            <video src="../Asset/IMAGES/bunny.webm" class="w-100" autoplay muted loop alt=""></video>
+<!--  -->
+    <section class="container">
+        <div class="heading mb-3">
+            <h1>Love to hear from you,</h1>
+            <h1>Get in touch👋</h1>
         </div>
-    </section>
-
-    <section id="work" class="mt-md-5 mt-0  py-5 container mb-5  d-flex justify-content-center flex-column">
-        <div class="latest-work work  d-flex flex-column gap-5">
-            <h1 class="display-4 text-center lead mb-4 p-5 work-heading" id="latestwork">Latest Work</h1>
-            <a class=" project d-grid rounded-3 text-decoration-none" href="#">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">01 | WEB APPLICATION AND DESIGN</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class="object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0">BlockChain Explorer</p>
-                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
-                    </div>
-                </div>
-
-            </a>
-        </div>
-
-
-        <div class="Selected-Work work mt-5 d-flex flex-column gap-5 mb-5">
-            <h1 class="display-4 text-center lead mb-4 p-5">Selected Work</h1>
-            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="firstPortfolio" href="../../../Documents/">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">01 | WEB DESIGN</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0">First Portofilo</p>
-                        <p>A little throwback to one of the steps along the way to getting here.</p>
-                    </div>
-                </div>
-
-            </a>
-
-            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="wehope" href="#">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">02 | WEB DESIGN</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0">BlockChain Explorer</p>
-                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
-                    </div>
-                </div>
-
-            </a>
-
-            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="dedust" href="#">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">03 | WEB DESIGN</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0">DEDUST.IO</p>
-                        <p>A Decentralized trading exchange where you can move into the ton ecosystem.</p>
-                    </div>
-                </div>
-
-            </a>
-
-            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" id="uniswap" href="../../UNISWAP/HTML/index.html">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">04 | WEB DESIGN</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0">UNISWAP</p>
-                        <p>The No.1 Decentralized exchange on the ethereum network.UNIque Indeed!</p>
-                    </div>
-                </div>
-
-            </a>
-
+        <div class="form-container">
+            <div class="name-emailcontainer">
+                <span class="namecontainer">
+                    <label for="nameinput" class="form-label name">Name</label>
+                    <input type="text" id="nameinput" class="form-control">
+                </span>
+                <span class="emailcontainer">
+                    <label for="emailinput" class="form-label email">Email</label>
+                    <input type="text" id="emailinput" class="form-control">
+                </span>
+            </div>
+            <div class="interest-budget-container">
+                <span class="dropdowncontainer">
+                    <label for="interest" class="form-label firstdropdown">What you are interested</label>
+                    <select name="" id="interest" class="form-select" aria-label="Default select example">
+                        <option value="" selected>Design & Branding</option>
+                        <option value="" >Web Application & Design</option>
+                        <option value="" >App Development & Design</option>
+                        <option value="" >AI $ Machine Learning</option>
+                        <option value="" >Cloud Computing</option>
+                    </select>
+                </span>
+                <span class="emailcontainer">
+                    <label for="dropdown2" class="form-label seconddropdown">Project Budget</label>
+                    <input type="text" id="dropdown2">
+                </span>
+            </div>
         </div>
 
-        <div class="non-static work mt-5 d-flex flex-column gap-5 mb-5">
-            <h1 class="display-4 text-center lead " id="non-static">Non Static</h1>
-            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" href="#">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">01 | WEB APPLICATION</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0"> BlockChain Explorer</p>
-                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
-                    </div>
-                </div>
-
-            </a>
-            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" href="#">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">02 | WEB APPLICATION</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0">BlockChain Explorer</p>
-                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
-                    </div>
-                </div>
-
-            </a>
-            <a class=" project mb-5 d-grid rounded-3 text-decoration-none" href="#">
-                <div class="writeup py-2 d-flex justify-content-between align-items-center w-100">
-                    <p class="fw-semibold">03 | WEB APPLICATION</p>
-                    <svg class="ethlogo">
-                        <use xlink:href="#eth"></use>
-                    </svg>
-                </div>
-
-                <div class="work-description d-flex align-items-start flex-md-row flex-column align-items-md-center">
-                    <img src="../Asset/IMAGES/darkEthLogo.png" alt="" class=" object-fit-cover  d-md-block">
-                    <div>
-                        <p class="m-0">BlockChain Explorer</p>
-                        <p>A gateway to deep dive into the world of the blockchain. View transcations and more.</p>
-                    </div>
-                </div>
-
-            </a>
-        </div>
     </section>
 
 
+
+<!-- FOOTER SECTION -->
     <footer class="px-md-5 px-2 py-md-4 py-3 d-flex flex-column gap-4 justify-content-center">
         <h3 class="text-capitalize text-center">Thanks for stopping by! here's more of me</h3>
         <div class="d-grid footer-links">
@@ -367,7 +227,7 @@
                 <li><a href="mailto:arinzlotanna@gmail.com">Email</a></li>
                 <li><a href="">WhatsApp</a></li>
             </ul>
-
+    
             <span class="theme-container">
                 <svg class="moon" width="30px" height="30px">
                     <use xlink:href="#moontheme"></use>
@@ -377,42 +237,12 @@
                 </svg>
             </span>
         </div>
-
+    
     </footer>
 
-
-
-
-    <script>
-        const time = document.querySelector(".time");
-        function updateTime(element) {
-            const now = new Date();
-            // AM|| PM
-            let meridem= now.toLocaleTimeString()
-            meridem=meridem[meridem.length-2] + meridem[meridem.length - 1]
-            // console.log(meridem)
-            let hour=now.getHours();
-            let minutes= now.getMinutes().toString().padStart(2,"0")
-            // console.log(typeof minutes.toString().padStart(2,"0"), minutes.toString().padStart(2,"0"),minutes)
-            let formattedTime = hour+":" +minutes +" "+meridem;
-
-            console.log(formattedTime)
-            element.textContent = formattedTime;
-            setTimeout(() => { updateTime(time) }, 60);
-        }
-
-        updateTime(time)
-    </script>
-
-    <!-- <script src="../JS/svgAnimation.js"></script> -->
     <script src="../JS/typing.js"></script>
-    <script src="../JS/animation.js"></script>
 </body>
-
 </html>
-
-
-
 <svg style="display:none;" width="24px" height="24px" fill="#737171" xmlns="http://www.w3.org/2000/svg">
     <!-- //moon icon -->
     <symbol id="hovericon" viewBox="0 0 256 256" x="0px" y="0px" viewBox="0 0 256 256"
@@ -461,30 +291,34 @@
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
-        <path
+            <path
                 d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </g>
 
     </symbol>
-    
+
 
     <symbol viewBox="0 0 24 24" id="suntheme" fill="none">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-                <path
-                    d="M7.28451 10.3333C7.10026 10.8546 7 11.4156 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C11.4156 7 10.8546 7.10026 10.3333 7.28451"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M12 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M12 20V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M4 12L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M22 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M19.7778 4.22266L17.5558 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M4.22217 4.22266L6.44418 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M6.44434 17.5557L4.22211 19.7779" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                <path d="M19.7778 19.7773L17.5558 17.5551" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            </g>
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+            <path
+                d="M7.28451 10.3333C7.10026 10.8546 7 11.4156 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C11.4156 7 10.8546 7.10026 10.3333 7.28451"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M12 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M12 20V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M4 12L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M22 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M19.7778 4.22266L17.5558 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            </path>
+            <path d="M4.22217 4.22266L6.44418 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            </path>
+            <path d="M6.44434 17.5557L4.22211 19.7779" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            </path>
+            <path d="M19.7778 19.7773L17.5558 17.5551" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            </path>
+        </g>
     </symbol>
 
 

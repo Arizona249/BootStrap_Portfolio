@@ -92,22 +92,24 @@ if(document.documentElement.id==="homepage"){
     startTyping();
 }
 
-else{
+else if(document.documentElement.id=="aboutpage"){
     function typeWriter(element, text, index = 0, callback) {
-        if (index === 0) {
-            element.textContent = ""
-        }
-        element.textContent += text[index]
-        if (index >= text.length - 1) {
-            console.log(index)
-            setTimeout(() => { callback(); }, 1200)
-
-        }
-        else if (index < text.length) {
-            setTimeout(() => {
-                typeWriter(element, text, index + 1, callback)
-            }, 100);
-            
+        if(element){
+            if (index === 0) {
+                element.textContent = ""
+            }
+            element.textContent += text[index]
+            if (index >= text.length - 1) {
+                console.log(index)
+                setTimeout(() => { callback(); }, 1200)
+    
+            }
+            else if (index < text.length) {
+                setTimeout(() => {
+                    typeWriter(element, text, index + 1, callback)
+                }, 100);
+                
+            }
         }
     }
 

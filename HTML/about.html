@@ -162,7 +162,7 @@
             <ul class="navbar-nav flex-row gap-md-5 gap-1  nav-ul justify-content-between ">
                 <li class="nav-items"><a class="nav-link fw-bold " href="index.html">Work</a></li>
                 <li class="nav-items"><a class="nav-link fw-bold " href="about.html">About</a></li>
-                <li class="nav-items"><a class="nav-link fw-bold " href="#">Contact</a></li>
+                <li class="nav-items"><a class="nav-link fw-bold " href="contact.html">Contact</a></li>
             </ul>
             <div
                 class="custom_progress rounded-circle bg-dark d-flex align-items-center justify-content-center ms-md-2 ms-1">
@@ -335,14 +335,18 @@
     <script>
         const time = document.querySelector(".time");
         function updateTime(element) {
-            const now = new Date();
-            // AM|| PM
-            let meridem = now.toLocaleTimeString()
-            meridem = meridem[meridem.length - 2] + meridem[meridem.length - 1]
-            // console.log(meridem)
-            let formattedTime = now.getHours() + ":" + now.getMinutes() + " " + meridem;
-            console.log(formattedTime)
-            element.textContent = formattedTime;
+                const now = new Date();
+                // AM|| PM
+                let meridem = now.toLocaleTimeString()
+                meridem = meridem[meridem.length - 2] + meridem[meridem.length - 1]
+                // console.log(meridem)
+                let hour = now.getHours();
+                let minutes = now.getMinutes().toString().padStart(2, "0")
+                // console.log(typeof minutes.toString().padStart(2,"0"), minutes.toString().padStart(2,"0"),minutes)
+                let formattedTime = hour + ":" + minutes + " " + meridem;
+
+                console.log(formattedTime)
+                element.textContent = formattedTime;
             setTimeout(() => { updateTime(time) }, 60);
         }
 

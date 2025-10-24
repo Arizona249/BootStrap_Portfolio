@@ -62,7 +62,7 @@ html.lightMode {
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: var(--bg-color) !important;
     transition: var(--transition);
     transition-duration: .8s;
 }
