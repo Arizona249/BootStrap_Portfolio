@@ -1,0 +1,114 @@
+/* @property --pageScrollProgress{
+    syntax: "<length-percentage>";
+    inherits: false;
+    initial-value: 0%;
+
+} */
+@font-face {
+    font-family: 'Manrope';
+    src: url("../Asset/FONT/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'inter-display';
+    src: url("../Asset/FONT/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+    --pageScrollProgress: 0%;
+    --bg-color: #101010;
+    --primaryTextColor: #7f8188;
+    --primaryTextHover: #f9f9f9;
+    --color97: #979797;
+    --color7A: #7a7a7a;
+    --secondaryTextColor: #303236;
+    --secondaryBgColor: #171717;
+    --accentColor: #ffff;
+    --navbarColor: #101010db;
+    --footerBgColor: #1e1d1c;
+    --floatingNavColor: var(--bg-color);
+    --testingBorder: 2px solid red;
+    --testingBorder1: 3px solid teal;
+    --thinBorder: .2px solid rgba(214, 208, 208, 31%);
+    --logoImgSize: 80px;
+    --navIconSize: 35px;
+    --transition: all 0.3s ease-in-out;
+    --smallerFontSize: 12px;
+    --smallFontSize: 14px;
+    --normalFontSize: 16px;
+    --mediumFontSize: 18px;
+    --bigFontSize: 20px;
+    --biggerFontSize: 25px;
+    --font30: 30px;
+}
+
+* {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'inter-display', sans-serif;
+
+}
+* label{
+    margin: 0 !important;
+    font-size: var(--normalFontSize);
+    color: var(--color7A);
+    font-weight: 600;
+}
+* select{
+    color:var(--color97) !important;
+}
+
+
+
+
+body {
+    background-color: var(--bg-color);
+    /* color: var(--primaryTextColor); */
+}
+
+.heading h1{
+    color: var(--color97);
+}
+
+
+.inner_parent_container{
+    gap: 1rem;
+}
+.form-container{
+    gap: 1rem;
+}
+.inner-form_container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+
+}
+.inner-form_container input ,select ,textarea{
+    /* border-radius: 0 !important; */
+    background-color: var(--secondaryBgColor) !important;
+    color: var(--color97) !important;
+    background-image: none !important;
+    border:none !important;
+}
+
+.inner-form_container input::placeholder,textarea::placeholder{
+    /* opacity: .5; */
+    color: #a0a0a0;
+}
+/* select{
+   appearance: none !important;
+} */
+input:focus
+,select:focus,
+textarea:focus{
+    box-shadow: 0 0 0 .25rem var(--secondaryTextColor) !important;
+    border: none !important;
+    outline: none !important;
+}
+.btn{
+    /* background-image: linear-gradient(0deg, rgb(89, 89, 89) 0%, rgb(255, 255, 255) 100%) !important; */
+    /* background-color: var(--accentColor) !important; */
+    background-color: var(--color7A) !important;
+    color: var(--navbarColor);
+}
+
+
+

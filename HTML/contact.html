@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="../CSS/nav.css">
-    <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
     <script>
         const devPhrases = [
             "HTML — the silent foundation.",
@@ -129,6 +131,7 @@
 
     </script>
 </head>
+
 <body>
     <!-- NAVIGATION BAR -->
     <nav
@@ -150,55 +153,79 @@
             <ul class="navbar-nav flex-row gap-md-5 gap-1  nav-ul justify-content-between ">
                 <li class="nav-items"><a class="nav-link fw-bold " href="index.html">Work</a></li>
                 <li class="nav-items"><a class="nav-link fw-bold " href="about.html">About</a></li>
-                <li class="nav-items"><a class="nav-link fw-bold " href="#">Contact</a></li>
+                <li class="nav-items"><a class="nav-link fw-bold " href="contact.html">Contact</a></li>
             </ul>
             <div
                 class="custom_progress rounded-circle bg-dark d-flex align-items-center justify-content-center ms-md-2 ms-1">
             </div>
         </div>
-    
+
         <p class="time d-none d-md-block fw-bold align-self-center">6:12 AM</p>
     </nav>
-<!--  -->
-    <section class="container">
-        <div class="heading mb-3">
-            <h1>Love to hear from you,</h1>
-            <h1>Get in touch👋</h1>
-        </div>
-        <div class="form-container">
-            <div class="name-emailcontainer">
-                <span class="namecontainer">
-                    <label for="nameinput" class="form-label name">Name</label>
-                    <input type="text" id="nameinput" class="form-control">
-                </span>
-                <span class="emailcontainer">
-                    <label for="emailinput" class="form-label email">Email</label>
-                    <input type="text" id="emailinput" class="form-control">
-                </span>
+    <!--  -->
+
+
+    <section class=" w-100 d-flex justify-content-center px-4 py-4">
+        <form class="inner_parent_container container  p-3 p-md-5 d-flex flex-column">
+            <div class="heading  text-center text-md-start px-0 px-md-5">
+                <h1 class="h1 fw-semibold d-none d-md-block">Love to hear from you,</h1>
+                <h1 class="h1 fw-semibold">Get in touch👋</h1>
             </div>
-            <div class="interest-budget-container">
-                <span class="dropdowncontainer">
-                    <label for="interest" class="form-label firstdropdown">What you are interested</label>
-                    <select name="" id="interest" class="form-select" aria-label="Default select example">
-                        <option value="" selected>Design & Branding</option>
-                        <option value="" >Web Application & Design</option>
-                        <option value="" >App Development & Design</option>
-                        <option value="" >AI $ Machine Learning</option>
-                        <option value="" >Cloud Computing</option>
-                    </select>
-                </span>
-                <span class="emailcontainer">
-                    <label for="dropdown2" class="form-label seconddropdown">Project Budget</label>
-                    <input type="text" id="dropdown2">
-                </span>
+
+            <div class="form-container  px-0 px-md-5 d-flex flex-column">
+                <div class="name-emailcontainer inner-form_container d-flex flex-column d-md-grid mb-2 mb-md-0 gap-4 gap-md-3">
+                    <span class="namecontainer">
+                        <label for="nameinput" class="form-label name">Name</label>
+                        <input type="text" placeholder="Enter Name" id="nameinput" class="form-control ">
+                    </span>
+                    <span class="emailcontainer">
+                        <label for="emailinput" class="form-label email">Email</label>
+                        <input type="text" placeholder="Enter Email" id="emailinput" class="form-control">
+                    </span>
+                </div>
+
+                <div class="interest-budget-container  inner-form_container d-flex flex-column d-md-grid mb-2 mb-md-0 gap-4 gap-md-3 gap-4">
+                    <span class="dropdowncontainer">
+                        <label for="interest" class="form-label firstdropdown">What you are interested</label>
+                        <select name="" id="interest" class="form-select" aria-label="Default select example">
+                            <option value="" selected>Design & Branding</option>
+                            <option value="">Web Application & Design</option>
+                            <option value="">App Development & Design</option>
+                            <option value="">AI & Machine Learning</option>
+                            <option value="">Cloud Computing</option>
+                            <option value="">Consultant</option>
+                            
+                        </select>
+                    </span>
+                    <span class="emailcontainer">
+                        <label for="dropdown2" class="form-label seconddropdown">Project Budget</label>
+                        <select name="" id="dropdown2" class="form-select" aria-label="Default select example">
+                            <option value="" selected>Select Your budget</option>
+                            <option value="">$200,000-$750,000</option>
+                            <option value="">$150,000-$450,000</option>
+                            <option value="">$50,000-$75,000</option>
+                            <option value="">$20,000-$35,000</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="message-container  ">
+                    <span class="message-textarea d-flex flex-column ">
+                        <label for="textarea">Message</label>
+                        <textarea name="" id="textarea" class="border-0 p-2" placeholder="Input your message" rows="8"></textarea>
+                    </span>
+                </div>
+
+                <button class="btn align-self-center align-self-md-start fw-semibold" type="submit" >Send a message</button>
+
             </div>
-        </div>
+        </form>
 
     </section>
 
 
 
-<!-- FOOTER SECTION -->
+    <!-- FOOTER SECTION -->
     <footer class="px-md-5 px-2 py-md-4 py-3 d-flex flex-column gap-4 justify-content-center">
         <h3 class="text-capitalize text-center">Thanks for stopping by! here's more of me</h3>
         <div class="d-grid footer-links">
@@ -227,7 +254,7 @@
                 <li><a href="mailto:arinzlotanna@gmail.com">Email</a></li>
                 <li><a href="">WhatsApp</a></li>
             </ul>
-    
+
             <span class="theme-container">
                 <svg class="moon" width="30px" height="30px">
                     <use xlink:href="#moontheme"></use>
@@ -237,11 +264,33 @@
                 </svg>
             </span>
         </div>
-    
+
     </footer>
 
+
+    <script>
+        const time = document.querySelector(".time");
+        function updateTime(element) {
+            const now = new Date();
+            // AM|| PM
+            let meridem = now.toLocaleTimeString()
+            meridem = meridem[meridem.length - 2] + meridem[meridem.length - 1]
+            // console.log(meridem)
+            let hour = now.getHours();
+            let minutes = now.getMinutes().toString().padStart(2, "0")
+            // console.log(typeof minutes.toString().padStart(2,"0"), minutes.toString().padStart(2,"0"),minutes)
+            let formattedTime = hour + ":" + minutes + " " + meridem;
+
+            console.log(formattedTime)
+            element.textContent = formattedTime;
+            setTimeout(() => { updateTime(time) }, 60);
+        }
+
+        updateTime(time)
+    </script>
     <script src="../JS/typing.js"></script>
 </body>
+
 </html>
 <svg style="display:none;" width="24px" height="24px" fill="#737171" xmlns="http://www.w3.org/2000/svg">
     <!-- //moon icon -->

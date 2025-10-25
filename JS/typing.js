@@ -4,10 +4,10 @@ const element = document.querySelector(".typeWriter");
 const heroName = document.querySelector(".name");
 const themeBtn = document.querySelector(".theme-container")
 
-// document.addEventListener("DOMContentLoaded",()=>{
-//     console.log("loaded")
-//         window.scrollTo({ top: 0, behavior: "smooth" })
-// })
+document.addEventListener("DOMContentLoaded",()=>{
+    console.log("loaded")
+        window.scrollTo({ top: 0, behavior: "smooth" })
+})
 
 
 if (scrollY <= 12) { floatingNavBarList.classList.add("expandNav") }
