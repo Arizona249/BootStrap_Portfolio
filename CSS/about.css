@@ -41,6 +41,9 @@
     font-family: 'Manrope', sans-serif;
 
 }
+body{
+    overflow-x: hidden;
+}
 .name{
     font-size: calc(1.2rem + 3vw) !important;
 }

@@ -204,7 +204,7 @@ section video{
 
 @media (max-width:300px) {
     body{
-        display: none;
+        /* display: none; */
     }
     
 }

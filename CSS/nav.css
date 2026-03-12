@@ -204,6 +204,8 @@ body{
     .navbar {
         /* padding-inline: 0px !important; */
         border-radius: 0 !important;
+        background-color: transparent;
+        backdrop-filter: none;
     }
 
     .floating-nav {
@@ -227,4 +229,12 @@ body{
     .click-icon {
         display: none !important;
     }
+
+
+}
+@media (max-width:250px) {
+    .custom_progress{
+        display: none !important;
+    }
+    
 }
